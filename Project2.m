@@ -13,7 +13,7 @@ theta0 = 0; % [rad]
 t0 = 0;
 tf = 2.42e6;
 %other variables
-options = odeset('RelTol', 1e-8, 'AbsTol', 1e-8); %tolerance
+options = odeset('RelTol', 1e-12, 'AbsTol', 1e-12); %tolerance
 mu = 3.986e5; % [km^3/s^2]
 T = 2*pi*sqrt(a0^3/mu); % orbital period
 %State space variables
