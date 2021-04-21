@@ -18,7 +18,7 @@ h = sqrt(mu*p);
 r = p/(1+x(2)*cos(x(6)));
 
 xdot(1) = 2*x(1)^2/h*(x(2)*sin(x(6))*aR + p/r*aT);
-xdot(2) = 1/h*(p*sin(x(6))*aR + ((p+r)*cos(x(6) + r*x(2)))*aT);
+xdot(2) = 1/h*(p*sin(x(6))*aR + ((p+r)*cos(x(6)) + r*x(2))*aT);
 xdot(3) = r*cos(x(6)+x(5))/h*aN;
 xdot(4) = r*sin(x(6)+x(5))/(h*sin(x(3)))*aN;
 xdot(5) = 1/(h*x(2))*(-p*cos(x(6))*aR + (p+r)*sin(x(6))*aT)...
